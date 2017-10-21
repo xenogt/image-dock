@@ -1,0 +1,13 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "pfBaNx2zr75jsxpIvr8l8yaj0Xc=",
+			"path": "github.com/minio/minio-go",
+			"revision": "9169d8af114db42a3efb488f9fabf76cfea8428d",
+			"revisionTime": "2017-10-21T00:42:29Z"
+		}
+	],
+	"rootPath": "github.com/xenogt/image-dock"
+}
