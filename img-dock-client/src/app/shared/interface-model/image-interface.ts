@@ -1,4 +1,4 @@
-interface Image {
+interface IImage {
     id?: number;
     name: string;
     // minioRef?: string;

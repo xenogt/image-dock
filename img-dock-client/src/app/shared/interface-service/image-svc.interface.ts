@@ -1,4 +1,6 @@
-interface ImageService {
+import { Image } from '../models/image';
+
+interface IImageService {
     add(image: Image): Image;
     delete(id: number): void;
     getById(id: number): Image;
