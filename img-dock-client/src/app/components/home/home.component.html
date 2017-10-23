@@ -1,3 +1,15 @@
-<div *ngIf="user.name!==null">
-  Hello! {{user.name}}, welcome to ImageDock!
+<div *ngIf="user.name!==null" class="container home">
+  <h1>Hello! {{user.name}}, welcome to ImageDock!</h1>
+
+  <div class="row">
+    <div class="hoverbar"></div>
+  </div>
+
+  <div class="row">
+    <app-category-viewport *ngIf="!hoverbar"></app-category-viewport>
+  </div>
+
+  <div class="row">
+    <app-images-viewport></app-images-viewport>
+  </div>
 </div>

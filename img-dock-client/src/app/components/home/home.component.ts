@@ -9,6 +9,7 @@ import { User } from '../../shared/models/user';
 export class HomeComponent implements OnInit {
 
   user:User;
+  hoverbar: boolean = false;
 
   constructor() {
     this.user = new User();

@@ -1,0 +1,14 @@
+.home {
+    margin: 100px 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.hoverbar {
+    height: 20px;
+    width: 100%;
+    background-color: rgb(49, 49, 122);
+}
