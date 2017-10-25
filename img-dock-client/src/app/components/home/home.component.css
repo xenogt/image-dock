@@ -1,23 +1,14 @@
-.home {
-    margin: 100px 0;
-}
-
 h1 {
     text-align: center;
     margin: 100px 0;
 }
 
 .hoverbar {
-    /* height: 20px; */
     width: 100%;
     background-color: rgb(49, 49, 122);
     text-align: center;
     color: white;
     font-size: 20px;
     margin-top:50px;
-    /* padding: 20px 0; */
 }
 
-.cat-container {
-    padding-top: 20px;
-}

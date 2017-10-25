@@ -20,6 +20,7 @@ export class CategoryViewportComponent implements OnInit, OnChanges {
   }
 
   @Input() isVisible : boolean;
+  @Input() hasCategory : boolean;
   visibility = 'shown';
 
   ngOnChanges() {

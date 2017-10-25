@@ -1,3 +1,4 @@
 <div [@visibilityChanged]="visibility" class="row catView">
-  <h2>Category-viewport works!</h2>
+  <h2 *ngIf="hasCategory">Category-viewport works!</h2>
+  <h2 *ngIf="!hasCategory">No Category Found</h2>
 </div>
