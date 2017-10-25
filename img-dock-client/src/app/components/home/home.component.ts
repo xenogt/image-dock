@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   user:User;
   showCategory: string = 'hide';
   hasCategory: boolean = false;
+  expandCat: boolean = false;
 
   constructor() {
     this.user = new User();
@@ -24,6 +25,8 @@ export class HomeComponent implements OnInit {
   }
 
   toggleCategory(): void {
-    this.showCategory = this.showCategory==='hide'?'show':'hide';
+    this.expandCat = !this.expandCat;
+    // this.showCategory = this.showCategory==='hide'?'show':'hide';
+    this.showCategory = this.expandCat ? 'show' : 'hide';
   }
 }

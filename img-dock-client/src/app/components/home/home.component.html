@@ -1,8 +1,11 @@
 <div *ngIf="user.name!==null" >
   
   <div class="row" (mouseenter)="toggleCategory()" (mouseleave)="toggleCategory()">
-    <div class="hoverbar">CATEGORIES</div>
-    <app-category-viewport [isVisible]="showCategory==='show'" [hasCategory]="hasCategory"></app-category-viewport>
+    <div class="hoverbar">CATEGORIES 
+      <i *ngIf="!expandCat" class="fa fa-chevron-down" aria-hidden="true"></i>
+      <i *ngIf="expandCat" class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+    <app-category-viewport [isVisible]="expandCat" [hasCategory]="hasCategory"></app-category-viewport>
   </div>
 
   <div class="row">
