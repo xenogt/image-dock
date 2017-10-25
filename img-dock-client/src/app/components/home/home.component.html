@@ -1,11 +1,11 @@
 <div *ngIf="user.name!==null" class="container home">
   
-  <div class="row">
-    <div [hidden]="showCategory==='show'" (mouseenter)="toggleCategory()" class="hoverbar"></div>
-  </div>
-
-  <div class="row">
-    <app-category-viewport [isVisible]="showCategory==='show'" (mouseleave)="toggleCategory()"></app-category-viewport>
+  
+  <div class="row cat-container" (mouseenter)="toggleCategory()" (mouseleave)="toggleCategory()">
+    <!-- <div [@hideBar]="showCategory"> -->
+      <div class="hoverbar">CATEGORIES</div>
+    <!-- </div> -->
+    <app-category-viewport [isVisible]="showCategory==='show'" ></app-category-viewport>
   </div>
 
   <div class="row">

@@ -9,7 +9,7 @@ import { trigger, state, style, animate, transition, group} from '@angular/anima
     trigger('visibilityChanged', [
       state('shown' , style({ opacity: 1 })),
       state('hidden', style({ height: 0, opacity: 0 })),
-      transition('* => *', animate('.7s'))
+      transition('* => *', animate('.5s'))
     ])
   ]
 })
